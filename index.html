@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example 10.3: The Particles Emitters Project </title>
+        <link rel ="icon" type ="image/x-icon" href="./assets/favicon.png">
+
+        <!-- the following says there are javascript source code contained in 
+             the external source files
+        -->
+        <!-- external library -->
+        <script type="text/javascript" src="./src/lib/gl-matrix.js"></script>
+
+        <!-- our game -->
+        <script type="module" src="./src/my_game/my_game.js"></script>
+    </head>
+
+     <body>    
+        <canvas id="GLCanvas" width="1200" height="800">
+            <!-- GLCanvas is the area we will draw in -->
+            Your browser does not support the HTML5 canvas.
+            <!-- this message will show only if WebGL clearing failed -->
+        </canvas>
+
+        <div style="padding-left:10px">
+        <b>Space</b>: To shoot a projectile <br>
+        <b>C</b>: To switch projectile types <br>
+        <b>R</b>: to change fire rate <br>
+        </div>
+        <p></p>
+    </body>
+</html>
