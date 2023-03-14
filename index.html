@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Example 10.3: The Particles Emitters Project </title>
+        <title>Projectile API </title>
         <link rel ="icon" type ="image/x-icon" href="./assets/favicon.png">
 
         <!-- the following says there are javascript source code contained in 
@@ -21,11 +21,33 @@
             <!-- this message will show only if WebGL clearing failed -->
         </canvas>
 
+        <!--
         <div style="padding-left:10px">
         <b>Space</b>: To shoot a projectile <br>
         <b>C</b>: To switch projectile types <br>
         <b>R</b>: to change fire rate <br>
         </div>
         <p></p>
+        -->
+
+        <div id='UpdateFrame'></div>
+
+        <script>
+            function gUpdateFrame(weapon) {
+                let elm = document.getElementById("UpdateFrame");
+                elm.innerHTML = "<b>Space</b>: To shoot a projectile <br>" +
+                                "<b>C</b>: To switch projectile types <br>" +
+                                "<b>Current Projectile Type: </b>" + weapon + "<br>" +
+                                "<b>R</b>: to change fire rate <br>" + 
+                                "<b>N</b>: to change scenes <br>";
+            }
+
+            function quitGame() {
+                let elm = document.getElementById("UpdateFrame");
+                elm.innerHTML = "";
+            }
+        </script>
+
+        
     </body>
 </html>
